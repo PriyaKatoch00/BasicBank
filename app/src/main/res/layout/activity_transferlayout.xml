@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="8dp"
+    android:layout_marginBottom="10dp" android:layout_marginTop="10dp" android:layout_marginRight="5dp"
+    app:cardBackgroundColor="#CDE2CE">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:id="@+id/Username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="20dp"
+                android:src="@drawable/person2"
+                android:layout_marginTop="-3dp"/>
+
+            <TextView
+                android:id="@+id/from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sender"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#684B3E"></TextView>
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow1"
+                android:layout_marginHorizontal="5dp"
+                android:layout_gravity="center_vertical|center_horizontal"></ImageView>
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NameA"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#684B3E"></TextView>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/reciever_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="23dp">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/person"
+                android:layout_marginTop="2dp"/>
+
+            <TextView
+                android:id="@+id/to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Receiver"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#AB6B38"></TextView>
+
+            <ImageView
+                android:id="@+id/arrow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow1"
+                android:layout_marginHorizontal="5dp"
+                android:layout_gravity="center_vertical|center_horizontal"></ImageView>
+            <TextView
+                android:id="@+id/name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NameB"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#AB6B38"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Username"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/datetime"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="date/time"
+                android:textSize="15dp" android:layout_marginTop="20dp"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp">
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="30dp"
+                android:src="@drawable/rupee2"
+                android:background="#010203"
+                android:layout_marginTop="-7dp"/>
+
+            <TextView
+                android:id="@+id/balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Balance"
+                android:textSize="15sp"
+                android:layout_marginLeft="2dp"
+                android:textStyle="bold"
+                android:textColor="#AB6B38"></TextView>
+            <TextView
+                android:id="@+id/rupeeslash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" /-"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#AB6B38"></TextView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/transaction_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Amount"
+            android:text="Transaction status"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"></TextView>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
